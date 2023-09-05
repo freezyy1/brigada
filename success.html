@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_que.css">
+    <title>Опрос по состоянию здоровья</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Опрос по состоянию здоровья</h2>
+        <form id="health-survey-form">
+            <label for="feeling">Как вы себя чувствуете сегодня?</label>
+            <input type="radio" id="feeling-excellent" name="feeling" value="Отлично" required>
+            <label for="feeling-excellent">Отлично</label>
+            <input type="radio" id="feeling-good" name="feeling" value="Хорошо">
+            <label for="feeling-good">Хорошо</label>
+            <input type="radio" id="feeling-average" name="feeling" value="Средне">
+            <label for="feeling-average">Средне</label>
+            <input type="radio" id="feeling-poor" name="feeling" value="Плохо">
+            <label for="feeling-poor">Плохо</label>
+            
+            <label for="symptoms">Есть ли у вас симптомы болезни? (пожалуйста, укажите)</label>
+            <textarea id="symptoms" name="symptoms" rows="4"></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="script_que.js"></script>
+</body>
+</html>
