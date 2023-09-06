@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Отображаем данные об опросе
         healthContainer.innerHTML = `
-            <p><strong>Как вы себя чувствуете сегодня:</strong> ${healthData.feeling}</p>
+            <p><strong>Как вы себя чувствуете сегодня:</strong> ${healthData.health_condition}</p>
             <p><strong>Симптомы болезни:</strong> ${healthData.symptoms}</p>
             <p><strong>Пульс:</strong> ${healthData.pulse}</p>
             <p><strong>Сахар в крови:</strong> ${healthData.sugar}</p>

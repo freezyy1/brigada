@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     healthSurveyForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const feeling = document.querySelector('input[name="feeling"]:checked').value;
+        const health_condition = document.getElementById("health_condition").value;
         const symptoms = document.getElementById("symptoms").value;
         const pulse = document.getElementById("pulse").value;
         const sugar = document.getElementById("sugar").value;
 
         const healthData = {
-            feeling: feeling,
+            health_condition: health_condition,
             symptoms: symptoms,
             pulse: pulse,
             sugar: sugar,
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 health: healthData,
             };
 
-            // Сохраняем объединенные данные в localStorage
+            // Save the combined data to localStorage
             localStorage.setItem("combinedData", JSON.stringify(combinedData));
 
             window.location.href = "metrics.html";

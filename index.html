@@ -1,20 +1,14 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="./assets/js/color-modes.js"></script>
-
+    <script src="script.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.115.4">
+    <meta name="author" content="brigada">
     <title>Signin Template · Bootstrap v5.3</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
 <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -79,8 +73,8 @@
         --bs-btn-bg: var(--bd-violet-bg);
         --bs-btn-border-color: var(--bd-violet-bg);
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-hover-bg: rgb(224, 40, 114);
+        --bs-btn-hover-border-color: rgb(224, 40, 114);
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
         --bs-btn-active-bg: #5a23c8;
@@ -174,32 +168,5 @@
   </form>
 </main>
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-  const registrationForm = document.getElementById("registration-form");
-  console.log(12321);
-  registrationForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Correctly access the username and password fields
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    // Create the user data object
-    const userData = {
-      username: username,
-      password: password,
-    };
-
-    // Store user data in localStorage
-    localStorage.setItem("userData", JSON.stringify(userData));
-
-    // Redirect to the success.html page
-    window.location.href = "success.html";
-  });
-});
-
-</script>
-
     </body>
 </html>
