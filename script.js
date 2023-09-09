@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Correctly access the username and password fields
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
 
     // Create the user data object
     const userData = {
       username: username,
       password: password,
+      email:email,
     };
 
     // Store user data in localStorage
