@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log(123)
     const healthSurveyForm = document.getElementById("health-survey-form");
 
     healthSurveyForm.addEventListener("submit", function (e) {
@@ -27,10 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 health: healthData,
             };
 
-            // Save the combined data to localStorage
             localStorage.setItem("combinedData", JSON.stringify(combinedData));
-
-            window.location.href = "metrics.html";
+            window.location.href = "../templates/metrics.html";
         }
 
         healthSurveyForm.reset();
